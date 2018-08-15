@@ -1,0 +1,55 @@
+<% layout('../layout/login-layout') -%>
+
+
+<!-- Heading -->
+<h1 class="display-4 text-center mb-3">
+  <%= env.serviceName %>
+</h1>
+
+<!-- Subheading -->
+<p class="text-muted text-center mb-5">
+  회원가입
+</p>
+
+<!-- Form -->
+<form>
+
+  <!-- Email address -->
+  <div class="form-group">
+
+    <!-- Label -->
+    <label>로그인 ID</label>
+
+    <!-- Input -->
+    <input type="email" class="form-control" placeholder="login id">
+
+  </div>
+
+  <!-- Password -->
+  <div class="form-group">
+
+    <!-- Label -->
+    <label>비밀번호</label>
+
+    <!-- Input group -->
+    <input type="password" class="form-control" placeholder="Enter your password">
+    
+  </div>
+
+  <!-- Password confirm -->
+  <div class="form-group">
+
+    <!-- Label -->
+    <label>비밀번호 확인</label>
+
+    <!-- Input group -->
+    <input type="password" class="form-control" placeholder="Enter your confirm password">
+
+  </div>
+
+  <!-- Submit -->
+  <button class="btn btn-lg btn-block btn-primary mb-3">
+    회원가입
+  </button>
+ 
+</form>

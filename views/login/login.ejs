@@ -1,0 +1,76 @@
+<% layout('../layout/login-layout') -%>
+
+
+<!-- Heading -->
+<h1 class="display-4 text-center mb-3">
+  <%= env.serviceName %>
+</h1>
+
+<!-- Subheading -->
+<p class="text-muted text-center mb-5">
+  서비스 사용을 위해서는 로그인이 필요 합니다.
+</p>
+
+<!-- Form -->
+<form action="/profile/profile">
+
+  <!-- Email address -->
+  <div class="form-group">
+
+    <!-- Label -->
+    <label>로그인 ID</label>
+
+    <!-- Input -->
+    <input type="email" class="form-control" placeholder="login id">
+
+  </div>
+
+  <!-- Password -->
+  <div class="form-group">
+
+    <div class="row">
+      <div class="col">
+            
+        <!-- Label -->
+        <label>비밀번호</label>
+
+      </div>
+      <div class="col-auto">
+        
+        <!-- Help text -->
+        <a href="password-reset-cover.html" class="form-text small text-muted">
+          비밀번호 찾기
+        </a>
+
+      </div>
+    </div> <!-- / .row -->
+
+    <!-- Input group -->
+    <div class="input-group input-group-merge">
+
+      <!-- Input -->
+      <input type="password" class="form-control form-control-appended" placeholder="Enter your password">
+
+      <!-- Icon -->
+      <div class="input-group-append">
+        <span class="input-group-text">
+          <i class="fe fe-eye"></i>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <button class="btn btn-lg btn-block btn-primary mb-3">
+    로그인
+  </button>
+
+  <!-- Link -->
+  <p class="text-center">
+    <small class="text-muted text-center">
+      <a href="signup">회원가입</a>
+    </small>
+  </p>
+  
+</form>
